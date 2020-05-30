@@ -6,7 +6,6 @@ import Contact from "../contact";
 const routes = [
   {       
     path: "profile",
-    exact: true,
     name: "Home",
     body: () => <Home />,
   },
