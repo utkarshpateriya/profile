@@ -35,7 +35,7 @@ const useStyles = makeStyles({
 function createNavlink(routes, index, classes){
     return (       
     <div>
-    <Link  to={"/"+routes[index].path} style={{textDecoration:'none'}}>
+    <Link  to={"profile/"+routes[index].path} style={{textDecoration:'none'}}>
     <Button className={classes.root}  style={{listStyleType:'none'}} disableRipple>
        <li>{routes[index].name } </li>
        </Button>
