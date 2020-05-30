@@ -35,7 +35,7 @@ const useStyles = makeStyles({
 function createNavlink(routes, index, classes){
     return (       
     <div>
-    <Link  to={"profile/"+routes[index].path} style={{textDecoration:'none'}}>
+    <Link  to={routes[index].path} style={{textDecoration:'none'}}>
     <Button className={classes.root}  style={{listStyleType:'none'}} disableRipple>
        <li>{routes[index].name } </li>
        </Button>
@@ -61,7 +61,7 @@ export default function Navbar(){
      </Paper>
 
             <Switch>
-            {routes.map((route, index) => (<Route exact={route.exact} key={index}  path={"/"+route.path} children={route.body}/>))}
+            {routes.map((route, index) => (<Route exact={route.exact} key={index}  path={route.path} children={route.body}/>))}
           </Switch>
           
         </>

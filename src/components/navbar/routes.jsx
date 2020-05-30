@@ -5,18 +5,18 @@ import Contact from "../contact";
 
 const routes = [
   {       
-    path: "",
+    path: "/profile",
     exact: true,
     name: "Home",
     body: () => <Home />,
   },
   {
-    path: "About",
+    path: "/profile/About",
     name: "About",
     body: () => <About />,
   },
   {
-    path: "Contact",
+    path: "/profile/Contact",
     name: "Contact",
     body: () => <Contact />,
   },
