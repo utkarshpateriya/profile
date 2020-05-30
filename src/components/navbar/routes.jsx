@@ -5,17 +5,19 @@ import Contact from "../contact";
 
 const routes = [
   {       
-    path: "https://utkarshpateriya.github.io/profile/",
+    path: "profile",
     exact: true,
-    name: "profile",
+    name: "Home",
     body: () => <Home />,
   },
   {
     path: "About",
+    name: "About",
     body: () => <About />,
   },
   {
     path: "Contact",
+    name: "Contact",
     body: () => <Contact />,
   },
 ]
