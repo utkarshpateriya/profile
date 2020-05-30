@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA,KACI,QAAS,CACT,SAAU,CACV,iBAAkB","file":"main.4decc217.chunk.css","sourcesContent":["body{\r\n    margin: 0;\r\n    padding: 0;\r\n    overflow-x: hidden;\r\n}"]}
