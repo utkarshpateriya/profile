@@ -37,7 +37,7 @@ function createNavlink(routes, index, classes){
     <div>
     <Link  to={"/"+routes[index].path} style={{textDecoration:'none'}}>
     <Button className={classes.root}  style={{listStyleType:'none'}} disableRipple>
-       <li>{ routes[index].path === "" ? routes[index].name : routes[index].path } </li>
+       <li>{routes[index].name } </li>
        </Button>
     </Link>
     </div>

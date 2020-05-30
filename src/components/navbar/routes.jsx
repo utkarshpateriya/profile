@@ -5,9 +5,9 @@ import Contact from "../contact";
 
 const routes = [
   {       
-    path: "",
+    path: "https://utkarshpateriya.github.io/profile/",
     exact: true,
-    name: "Home",
+    name: "profile",
     body: () => <Home />,
   },
   {
