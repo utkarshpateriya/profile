@@ -12,10 +12,16 @@ const useStyles = makeStyles((theme) => ({
     font: {
         fontFamily: 'Ubuntu',
         fontSize:'5em',
+        [theme.breakpoints.down('md')]: {
+            fontSize:'2em',
+          },
     },
     subfont:{
         fontFamily: 'Ubuntu',
         fontSize:'36px',
+        [theme.breakpoints.down('md')]: {
+            fontSize:'1em',
+          },
     }
 
 }));

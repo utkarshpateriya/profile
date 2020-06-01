@@ -6,6 +6,7 @@ import Footer from './footer';
 import Card from "./card";
 import StyleQuotes from "./styledquote";
 import Typer from './Typer';
+import EndPara from './lastContent';
 
 import Test from './test';
 
@@ -35,13 +36,14 @@ export default function RecipeReviewCard() {
 {/* Services*/}
 <Card />
 {/* Here's my story */}
-{/* <Welcome /> */}
+<Welcome />
 {/* Quote */}
 <StyleQuotes />
 <Divider className={classes.divider} /> 
 {/* Things I know */}
 <TechIknow />
 {/* End Grids */}
+<EndPara />
 <Footer />
 </>
   );

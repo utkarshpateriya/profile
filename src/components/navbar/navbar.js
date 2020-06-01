@@ -1,20 +1,25 @@
 import React from "react";
 import {Switch,Route, Link} from "react-router-dom";
 import routes from "./routes";
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core';
 import { Button, ButtonGroup, Paper, Grid} from '@material-ui/core';
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
       color:'white',
       listStyleType: "none",
       borderRadius: "0px",
       height: "45px",
-      padding: '0px 60px 0px 60px',
       zIndex: '100',
       fontSize:'22px',
       fontStyle:'bold',
+      padding: '0px 60px 0px 60px',
+      [theme.breakpoints.down('md')]: {
+        padding:'0px 15px 0px 0px',
+        fontSize:'12px',
+      },
+      
     },
     groups:{
       zIndex: '100',
@@ -27,7 +32,7 @@ const useStyles = makeStyles({
       backgroundColor:'rgba(0,0,0,0.6)',
     },
 
-  });
+  }));
 
 function createNavlink(routes, index, classes){
     return (       
