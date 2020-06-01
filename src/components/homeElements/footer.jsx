@@ -11,13 +11,14 @@ const useStyles = makeStyles((theme) => ({
   icons:{
     fontSize:'40px',
     color:'white',
-    margin:'20px'
+    margin:'10px',
   },
   text:{
     fontSize:'20px',
-    margin:'30px',
+    margin:'10px',
     color:'white'
   },
+  
 }));
 
 export default function Footer(){
