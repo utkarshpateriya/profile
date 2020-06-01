@@ -1,18 +1,21 @@
 {
   "files": {
     "main.css": "/profile/static/css/main.4decc217.chunk.css",
-    "main.js": "/profile/static/js/main.bcb45a0e.chunk.js",
-    "main.js.map": "/profile/static/js/main.bcb45a0e.chunk.js.map",
+    "main.js": "/profile/static/js/main.40026189.chunk.js",
+    "main.js.map": "/profile/static/js/main.40026189.chunk.js.map",
     "runtime-main.js": "/profile/static/js/runtime-main.6a573ec8.js",
     "runtime-main.js.map": "/profile/static/js/runtime-main.6a573ec8.js.map",
-    "static/js/2.292ffedf.chunk.js": "/profile/static/js/2.292ffedf.chunk.js",
-    "static/js/2.292ffedf.chunk.js.map": "/profile/static/js/2.292ffedf.chunk.js.map",
+    "static/js/2.2331845f.chunk.js": "/profile/static/js/2.2331845f.chunk.js",
+    "static/js/2.2331845f.chunk.js.map": "/profile/static/js/2.2331845f.chunk.js.map",
     "index.html": "/profile/index.html",
-    "precache-manifest.ec39aa3e367c3274d26692bfbb167ff2.js": "/profile/precache-manifest.ec39aa3e367c3274d26692bfbb167ff2.js",
+    "precache-manifest.87b9e492e40042e198ef214949a178f7.js": "/profile/precache-manifest.87b9e492e40042e198ef214949a178f7.js",
     "service-worker.js": "/profile/service-worker.js",
     "static/css/main.4decc217.chunk.css.map": "/profile/static/css/main.4decc217.chunk.css.map",
-    "static/js/2.292ffedf.chunk.js.LICENSE.txt": "/profile/static/js/2.292ffedf.chunk.js.LICENSE.txt",
+    "static/js/2.2331845f.chunk.js.LICENSE.txt": "/profile/static/js/2.2331845f.chunk.js.LICENSE.txt",
     "static/media/angular.png": "/profile/static/media/angular.2345a5c4.png",
+    "static/media/back1.png": "/profile/static/media/back1.8ccbb521.png",
+    "static/media/back2.png": "/profile/static/media/back2.97f75db7.png",
+    "static/media/back3.png": "/profile/static/media/back3.24809916.png",
     "static/media/blender.png": "/profile/static/media/blender.21b2dd28.png",
     "static/media/bootstrap.png": "/profile/static/media/bootstrap.87d99487.png",
     "static/media/cpp.png": "/profile/static/media/cpp.f278be79.png",
@@ -24,12 +27,13 @@
     "static/media/py.png": "/profile/static/media/py.b9bbb1d7.png",
     "static/media/react.png": "/profile/static/media/react.8d859602.png",
     "static/media/sass.png": "/profile/static/media/sass.c13c393f.png",
+    "static/media/story.png": "/profile/static/media/story.91be4427.png",
     "static/media/wordpress.png": "/profile/static/media/wordpress.6ded14c8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6a573ec8.js",
-    "static/js/2.292ffedf.chunk.js",
+    "static/js/2.2331845f.chunk.js",
     "static/css/main.4decc217.chunk.css",
-    "static/js/main.bcb45a0e.chunk.js"
+    "static/js/main.40026189.chunk.js"
   ]
 }
