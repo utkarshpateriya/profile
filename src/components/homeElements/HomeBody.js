@@ -1,54 +1,47 @@
 import React from 'react';
 import { makeStyles, Divider, Grid, Paper } from '@material-ui/core';
-import Gridfirst from './hello';
+import Welcome from './Welcome';
 import TechIknow from './Technologies';
-import Gridthird from './Gridthird';
-import Gridfourth from './Gridfourth';
-import Quote from './quote';
 import Footer from './footer';
+import Card from "./card";
+import StyleQuotes from "./styledquote";
+import Typer from './Typer';
+
+import Test from './test';
 
 const useStyles = makeStyles((theme) => ({
 blank:{
-  opacity:'0',
+  opacity:'0.2',
   borderRadius:'0',
-  height:'100vh',
-  top:'0',
+  width:'100vw',
+  backgroundImage:'linear-gradient(to right, black ,black, purple)',
+  transform:'translate(0px, -10px)',
+  height:'100vh'
 },
 divider:{
   margin:'150px 0px 150px 0px'
 },
-body:{
-  backgroundColor:'#A5B1B6',
-}
+
 }));
 
 export default function RecipeReviewCard() {
   const classes = useStyles();
   return (
 <>
-  <Grid container>
-      <Grid tem xs={12}>
-        <Paper className={classes.blank}>w</Paper>
-      </Grid>
-  </Grid>
-{/* Who am I */}
- <Gridfirst />
+{/* A blank overlay on background Image */}
 
-<Divider className={classes.divider} />
-
+{/* Automatic typer */}
+<Typer />
+{/* Services*/}
+<Card />
+{/* Here's my story */}
+{/* <Welcome /> */}
+{/* Quote */}
+<StyleQuotes />
+<Divider className={classes.divider} /> 
 {/* Things I know */}
 <TechIknow />
 {/* End Grids */}
- {/* <Gridthird /> */}
-  {/* <Gridfourth /> */}
-
-<Divider className={classes.divider} />
-
-{/* Quote */}
-<Quote />
-
-<Divider className={classes.divider} />  
-
 <Footer />
 </>
   );

@@ -12,6 +12,7 @@ contentstyle: {
     backgroundColor:'#212b29',
     // backgroundImage: 'linear-gradient(to right, #756E52, #eae3c5)',
     zIndex: '1',
+    width:'100%',
   },
 copyright:{
     fontSize:'10px',

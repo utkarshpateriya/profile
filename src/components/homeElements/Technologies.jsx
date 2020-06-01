@@ -26,7 +26,7 @@ import php from './../furniture/php.svg';
 const useStyles = makeStyles((theme) => ({
   title:{
     marginTop:'50px',
-    margin:'auto'
+    margin:'auto',
   },
   techTitle:{
     margin:'0px',
@@ -98,7 +98,7 @@ function Banner(props){
   
   return <Grid container   className={classes.techTitle}>
   <Grid item xs={12} >
-    <Paper elevation={2} style={{padding:'20px 20px 20px 20px', borderRadius:'0px', margin:'40px 0px 40px 0px'}}>
+    <Paper elevation={10} style={{padding:'20px 20px 20px 20px', borderRadius:'0px', margin:'40px 0px 40px 0px'}}>
         <Grid item xs ={12}>
           <Typography variant='h5' align='center' style={{margin:'35px', boxShadow:'0px 1px #888888', paddingBottom:'20px'}}>{props.bannerName}</Typography>
         </Grid> 
@@ -124,18 +124,19 @@ function Banner(props){
     </Paper>
   </Grid>
 </Grid>
+
 }
 
 export default function Gridsec() {
         const classes = useStyles();
         return (
       <>
-      <Grid container spacing={0} style={{marginBottom:'200px', backgroundColor:'#DDE2E3'}}>
+      <Grid container spacing={0} style={{marginBottom:'200px'}}>
       <Grid item md ={2} sm={0} xs={0}></Grid>
-      <Grid  item md ={8} xs={12} style={{backgroundColor:'#DDE2E3'}}>
+      <Grid  item md ={8} xs={12}>
           <Grid container>
               <Paper elevation={0} className={classes.title}>
-                  <Typography variant='h3' style={{backgroundColor: '#DDE2E3'}}>Skills</Typography>
+                  <Typography variant='h3' style={{fontFamily:'Ubuntu', fontStyle:'italic'}}>My skills</Typography>
               </Paper>
             </Grid>
 

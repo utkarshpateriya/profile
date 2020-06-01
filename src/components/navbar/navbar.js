@@ -1,35 +1,32 @@
 import React from "react";
-import {Switch,Route} from "react-router-dom";
+import {Switch,Route, Link} from "react-router-dom";
 import routes from "./routes";
 import { makeStyles } from '@material-ui/core/styles';
-import { Button, ButtonGroup, Paper} from '@material-ui/core';
-import {Link} from "react-router-dom";
+import { Button, ButtonGroup, Paper, Grid} from '@material-ui/core';
+
 
 const useStyles = makeStyles({
     root: {
       color:'white',
       listStyleType: "none",
-      boxShadow: '0.1px 0 0 0  rgba(0, 0, 0, 0)',
       borderRadius: "0px",
       height: "45px",
-      padding: '0px 20px 0px 20px',
+      padding: '0px 60px 0px 60px',
       zIndex: '100',
-      fontSize:'16px',
+      fontSize:'22px',
+      fontStyle:'bold',
     },
     groups:{
-      opacity:'0.8',
       zIndex: '100',
-      position:'absolute',
+      position : 'absolute',
       width:'100%',
       display:'flex',
-      justifyContent:'center'
+      justifyContent:'center',
+      margin:'0px',
+      borderRadius:'0px',
+      backgroundColor:'rgba(0,0,0,0.6)',
     },
 
-    navpaper:{
-      backgroundColor:'rgba(0,0,0,0)',
-      zIndex: '100',
-      border:'solid rgba(0,0,0,0)',
-    }
   });
 
 function createNavlink(routes, index, classes){
@@ -50,7 +47,8 @@ export default function Navbar(){
   var index = 0;
     return(
     <> 
-    <Paper elevation={0} className={classes.navpaper}>
+    <Grid container>
+    <Paper elevation={5} className={classes.navpaper}>
     <ButtonGroup className={classes.groups} variant="text" color="primary" aria-label="text primary button group">
    {routes.map( () =>  {return (
     <div key={index}>
@@ -61,9 +59,9 @@ export default function Navbar(){
      </Paper>
 
             <Switch>
-            {routes.map((route, index) => (<Route exact={route.exact} key={index}  path={route.path} children={route.body}/>))}
+            {routes.map((route, index) => (<Route exact={route.exact} key={index}  path={route.path} children={route.body} />))}
           </Switch>
-          
+          </Grid>
         </>
     )
 }
