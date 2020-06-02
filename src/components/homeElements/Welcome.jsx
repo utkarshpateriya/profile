@@ -13,25 +13,31 @@ const useStyles = makeStyles((theme) => ({
   },
   title:{
     marginBottom:'80px',
-    [theme.breakpoints.up('xs')]: {
-      padding:'0px',
-      margin:'0px',
-      fontSize:'40px'
-    },
-    [theme.breakpoints.up('xs')]: {
+    [theme.breakpoints.down('sm')]: {
       padding:'0px',
       margin:'0px',
       fontSize:'60px',
       marginBottom:'80px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      padding:'0px',
+      margin:'0px',
+      fontSize:'40px'
     },
   },
   content:{
     fontFamily:'Ubuntu',
     fontStyle:'italic',
     padding:'0px 60px 0px 60px',
+    [theme.breakpoints.down('sm')]: {
+      padding:'0px',
+    },
   },
   story:{
     height:'600px',
+    [theme.breakpoints.down('sm')]: {
+      height:'300px',
+    },
   },
   storyWrapDiv:{
     display:'flex',
@@ -40,14 +46,14 @@ const useStyles = makeStyles((theme) => ({
   },
   storyImg:{
     height:'500px',
-    [theme.breakpoints.up('xs')]: {
-      borderLeft:'none',
+    [theme.breakpoints.up('md')]: {
+      borderLeft:'1px solid grey',
     },
     [theme.breakpoints.up('sm')]: {
       borderLeft:'none',
     },
-    [theme.breakpoints.up('md')]: {
-      borderLeft:'1px solid grey',
+    [theme.breakpoints.up('xs')]: {
+      borderLeft:'none',
     },
   }
 }));

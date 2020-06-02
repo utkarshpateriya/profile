@@ -38,6 +38,14 @@ const useStyles = makeStyles((theme) => ({
         fontFamily:"Ubuntu",
         fontSize:"66px",
         width:'100%',
+        [theme.breakpoints.down('sm')]: {
+            fontSize:"36px",
+          },
+        [theme.breakpoints.down('xs')]: {
+            fontSize:"24px",
+          },
+          
+          
     }
 }));
 
@@ -45,7 +53,7 @@ export default function (props){
     const classes = useStyles();
     return (
         <>
-        <Typography variant="h4" align="center" className={classes.title}>Congruency Builds Credibility</Typography>
+        <Typography align="center" className={classes.title}>Congruency Builds Credibility</Typography>
         <Grid container className={classes.box} alignContent='center' >
         <Grid item md={4} sm={6} xs={12}>
         <Paper elevation={2} className={classes.paperBox}>
