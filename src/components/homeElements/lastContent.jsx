@@ -8,6 +8,9 @@ box:{
 title:{
     fontFamily:'Ubuntu',
     padding:'20px',
+    [theme.breakpoints.down('md')]: {
+        fontSize:'30px'
+      },
 },
 contentBox:{
     marginBottom:'0px',
@@ -16,6 +19,9 @@ content:{
     fontFamily:'Ubuntu',
     fontSize:'22px',
     lineHeight:'40px',
+    [theme.breakpoints.down('md')]: {
+        fontSize:'16px'
+      },
 }
 }));
 

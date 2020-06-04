@@ -13,16 +13,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title:{
     marginBottom:'80px',
-    [theme.breakpoints.down('sm')]: {
-      padding:'0px',
-      margin:'0px',
-      fontSize:'60px',
-      marginBottom:'80px',
-    },
-    [theme.breakpoints.down('xs')]: {
-      padding:'0px',
-      margin:'0px',
-      fontSize:'40px'
+    [theme.breakpoints.down('md')]: {
+      fontSize:'30px'
     },
   },
   content:{
@@ -30,14 +22,17 @@ const useStyles = makeStyles((theme) => ({
     fontSize:'22px',
     fontFamily:'Ubuntu',
     padding:'0px 60px 0px 60px',
-    [theme.breakpoints.down('sm')]: {
-      padding:'0px',
+    [theme.breakpoints.down('md')]: {
+      fontSize:'16px',
+      lineHeight:'30px',
     },
   },
   story:{
     height:'600px',
-    [theme.breakpoints.down('sm')]: {
-      height:'300px',
+    [theme.breakpoints.down('md')]: {
+      height:'400px',
+      marginTop:'100px'
+
     },
   },
   storyWrapDiv:{

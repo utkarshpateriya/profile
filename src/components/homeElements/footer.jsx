@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Paper, Typography, makeStyles}from "@material-ui/core";
+import { Grid, Typography, makeStyles}from "@material-ui/core";
 import { AiFillTwitterCircle, AiFillInstagram, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { MdEmail } from 'react-icons/md'
 
@@ -16,6 +16,10 @@ const useStyles = makeStyles((theme) => ({
     color:'white',
     margin:'10px',
     paddingBottom:'50px',
+    [theme.breakpoints.down('md')]: {
+      fontSize:'36px',
+      
+    },
   },
   text:{
     fontSize:'20px',
@@ -54,10 +58,5 @@ export default function Footer(){
     </>
   )
 }
-
-
-
-{/* 
-    <Typography className={classes.copyright}>©2020 Mc.Oba</Typography> */}
 
    

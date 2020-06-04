@@ -33,7 +33,7 @@ export default function Typer(){
         <Grid align='center' container className={classes.typer}>
         <Grid item xs={12}>
         <Typography className={classes.font}>
-                <Typed strings={["Utkarsh Mishra"]} 
+                <Typed strings={["Utkarsh Pateriya"]} 
                     typeSpeed={40}/>
                 </Typography>
                 </Grid>
