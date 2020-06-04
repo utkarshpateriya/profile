@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
           },
     },
     content:{
-        fontSize:'22px',
+        fontSize:'26px',
         lineheight:'30px',
         [theme.breakpoints.down('sm')]: {
             fontSize:'22px'
@@ -39,16 +39,10 @@ export default function AboutIntro(){
         <Grid item xs={0} md={1} />
             <Grid item xs={12} md={5}  style={{padding:'40px'}}>
                 <Typography align='left' className={classes.content}>
-                I'm a bit of a digital product junky. Over the years, 
-                I've used hundreds of web and mobile apps in different 
-                industries and verticals. Eventually, I decided that it would 
-                be a fun challenge to try designing and building my own.
-                </Typography>
-                <Typography align='left' className={classes.content}>
-                I'm a bit of a digital product junky. Over the years, 
-                I've used hundreds of web and mobile apps in different 
-                industries and verticals. Eventually, I decided that it would 
-                be a fun challenge to try designing and building my own.
+                You can also call me an Otaku. Tokyo, Akihabara is one of my 
+                favorite place to chill. Because the place is full of Anime madness 
+                I feel so excited every time I visit. You can check my vlog for a preview. 
+                 That's what I do for fun besides coding.
                 </Typography>
             </Grid>  
             <Grid item xs={12} md={6} >

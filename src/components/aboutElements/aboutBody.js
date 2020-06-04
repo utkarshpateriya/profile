@@ -17,16 +17,16 @@ export default function RecipeReviewCard() {
 <Background />
 <AboutIntro />
 <Para 
-title='Hello'
-content='I am paragraph'  
+title='What I do besides coding?'
+content='The past few years, I’ve gotten into blogging. 
+I love the challenge of finding answers to the problems in which
+others are stuck into. I like using my problem-solving skills to find the ones 
+that are really well-hidden. Learning how people hide things – and 
+where people are likely to look – has helped me tremendously in my
+ work. It’s all about learning to see things through someone else’s eyes.'  
 />
 <FirstGrid />
 <SecondGrid />
-
-<Para 
-title='Hello'
-content='I am paragraph'  
-/>
 <Footer />
 </>
   );

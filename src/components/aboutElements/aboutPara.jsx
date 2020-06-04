@@ -6,6 +6,7 @@ const useStyles = makeStyles((theme) => ({
         margin:'100px 0px'
     },
     content:{
+        marginTop:'50px',
         fontSize:'22px',
         lineheight:'30px',
         [theme.breakpoints.down('sm')]: {
@@ -30,7 +31,7 @@ export default function AboutPara(props){
                 <Typography align='center'  className={classes.title}>
                     {props.title}
                     </Typography>
-                    <Typography  className={classes.content}>
+                    <Typography  align='center' className={classes.content}>
                     {props.content}
                     </Typography>
                 </Grid>

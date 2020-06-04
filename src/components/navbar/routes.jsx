@@ -20,6 +20,7 @@ const routes = [
     name: "Contact",
     body: () => <Contact />,
   },
+  
 ]
 
 export default routes;

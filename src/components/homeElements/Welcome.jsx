@@ -9,7 +9,10 @@ const useStyles = makeStyles((theme) => ({
   },
   box:{
     padding:'50px',
-    borderRadius:'0px'
+    borderRadius:'0px',
+    [theme.breakpoints.down('xs')]: {
+      padding:"0"
+    },
   },
   title:{
     marginBottom:'80px',

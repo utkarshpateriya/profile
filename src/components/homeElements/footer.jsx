@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   text:{
+    fontFamily:'Ubuntu',
     fontSize:'20px',
     margin:'10px',
     color:'white',
@@ -38,7 +39,7 @@ export default function Footer(){
         <Grid item xs={2} style={{backgroundColor:'black',}}></Grid>
 
         <Grid container item xs={8} align='center'>
-        <Grid item xs={12} className={classes.text}>Connect to me</Grid>
+        <Grid item xs={12} className={classes.text}>Contact me</Grid>
          <Grid item xs={12}>
               <a href="https://twitter.com/78_utkarsh" target="_blank" ><AiFillTwitterCircle className={classes.icons} /></a>
               <a href="https://www.instagram.com/utkarsh29_" target="_blank" ><AiFillInstagram className={classes.icons} /></a>

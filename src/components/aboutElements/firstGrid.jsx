@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
         justifyContent:'center',
     },
      content:{
-        fontSize:'22px',
-        lineheight:'30px',
+        fontSize:'26px',
+        lineheight:'40px',
         [theme.breakpoints.down('sm')]: {
             fontSize:'22px'
           },
@@ -49,16 +49,16 @@ export default function AboutIntro(){
 
             <Grid item sm={12} md={5} className={classes.contentBox}>
                 <Typography align='left' className={classes.content}>
-                I'm a bit of a digital product junky. Over the years, 
-                I've used hundreds of web and mobile apps in different 
-                industries and verticals. Eventually, I decided that it would 
-                be a fun challenge to try designing and building my own.
+                I believe in being consistent. "Slow progress is better than no progress."
+But, in times when coding is not enough, I participate in other activities.
+I work on my communication skills by talking to myself, writing blogs, and
+one of them is making a lifestyle and travel vlogs. 
+I find rythm in coding being a music enthusiast. To entertain me I sing 
+along while playing my guitar. Also, there is one self-made song by me ft. Zack Music
+ "Tere Aane Se by Utkarsh."
                 </Typography>
                 <Typography align='left' style={{marginTop:'20px'}} className={classes.content}>
-                I'm a bit of a digital product junky. Over the years, 
-                I've used hundreds of web and mobile apps in different 
-                industries and verticals. Eventually, I decided that it would 
-                be a fun challenge to try designing and building my own.
+              
                 </Typography>
             </Grid>  
             <Grid item xs={1} md={1} />  

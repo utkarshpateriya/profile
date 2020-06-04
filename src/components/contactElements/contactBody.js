@@ -15,8 +15,9 @@ export default function RecipeReviewCard() {
 <Background />
 <Body />
 <Para 
-  title='Something'
-  content='Some paragraph on the content'
+  title='I’d love to hear from you'
+  content=' If you like my work and have some cool projects to work on, just send me a direct message or contact me through social sites listed below.
+'
 />
 <Footer />
 </>

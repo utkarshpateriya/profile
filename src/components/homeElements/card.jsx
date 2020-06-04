@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
         margin:'40px',
         [theme.breakpoints.down('xs')]: {
             height: 'auto',
+            margin:"0"
           },
           [theme.breakpoints.up('md')]: {
             height:'650px'
@@ -28,7 +29,15 @@ const useStyles = makeStyles((theme) => ({
           },
     },
     content:{
-        padding:'40px'
+        padding:'40px',
+        [theme.breakpoints.down('sm')]: {
+            fontSize:'22px',
+            padding:"10px",
+          },
+          [theme.breakpoints.down('xs')]: {
+            fontSize:'16px',
+            padding:"10px",
+          },
     },
     span:{
         color:"red"
@@ -44,8 +53,15 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]: {
             fontSize:"24px",
           },
-          
-          
+    },
+    spanTitle:{
+        fontSize:"46px",
+        [theme.breakpoints.down('sm')]: {
+            fontSize:"36px",
+          },
+        [theme.breakpoints.down('xs')]: {
+            fontSize:"24px",
+          },
     }
 }));
 
@@ -58,7 +74,7 @@ export default function (props){
         <Grid item md={4} sm={6} xs={12}>
         <Paper elevation={2} className={classes.paperBox}>
                     <FaLaptopCode className={classes.icons} />
-            <Typography style={{marginBottom:'30px'}} variant='h4' align='center'>
+            <Typography style={{marginBottom:'30px'}} variant='h4' align='center' className={classes.spanTitle}>
             Web <span className={classes.span}>Development</span>
             </Typography>
                 <Divider />
@@ -74,7 +90,7 @@ export default function (props){
         <Grid itm md={4} sm={6} xs={12}>
         <Paper elevation={2} className={classes.paperBox}>
                     <FaDesktop className={classes.icons} />
-            <Typography style={{marginBottom:'30px'}} variant='h4' align='center'>
+            <Typography style={{marginBottom:'30px'}} variant='h4' align='center' className={classes.spanTitle}>
             Desktop App <span className={classes.span}>Development</span>
             </Typography>
                 <Divider />
@@ -88,7 +104,7 @@ export default function (props){
         <Grid itm md={4} sm={6} xs={12}>
         <Paper elevation={2} className={classes.paperBox}>
                     <MdPhonelinkSetup className={classes.icons} />
-            <Typography style={{marginBottom:'30px'}} variant='h4' align='center'>
+            <Typography style={{marginBottom:'30px'}} variant='h4' align='center' className={classes.spanTitle}>
             App <span className={classes.span}>Development</span>
             </Typography>
                 <Divider />

@@ -47,8 +47,7 @@ export default function AboutIntro(){
             <Grid item xs={1}></Grid>
             <Grid item xs={8} className={classes.contentBox}>
                 <Typography className={classes.content}>
-                I like to develop expertise in several areas 
-                throughout my life and career.
+                Hello! I'm Utkarsh. I make digital products including apps for desktop, android, or iOS, and web applications. 
                 </Typography>
             </Grid>
             <Grid item xs={3}></Grid>
@@ -56,10 +55,8 @@ export default function AboutIntro(){
             <Grid item xs={1}></Grid>
             <Grid item xs={8} className={classes.contentBox}>
                 <Typography className={classes.content}>
-                I'm a bit of a digital product junky. Over the years, 
-                I've used hundreds of web and mobile apps in different 
-                industries and verticals. Eventually, I decided that it would 
-                be a fun challenge to try designing and building my own.
+                You can also call me a product developer, experience designer,
+                 interaction, UI, UX, or by any other market defined function-title.
                 </Typography>
             </Grid>
             <Grid item xs={3}></Grid>
