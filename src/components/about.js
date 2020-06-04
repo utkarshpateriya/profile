@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid, Paper, makeStyles  } from '@material-ui/core';
-
+import AboutBody from './aboutElements/aboutBody';
 const useStyles = makeStyles((theme) => ({
   imagestyle:{
     fontFamily: 'Ubuntu',
@@ -20,7 +20,7 @@ export default function About()  {
     const classes = useStyles();
     return (
       <>
-        
+        <AboutBody />
       </>
     )
 }

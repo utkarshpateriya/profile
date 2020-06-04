@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Typography, Grid, Paper, Divider } from '@material-ui/core';
+import { makeStyles, Typography, Grid, Paper } from '@material-ui/core';
 import Story from './../furniture/story.png'
 
 const useStyles = makeStyles((theme) => ({
@@ -26,8 +26,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   content:{
+    lineHeight:'50px',
+    fontSize:'22px',
     fontFamily:'Ubuntu',
-    fontStyle:'italic',
     padding:'0px 60px 0px 60px',
     [theme.breakpoints.down('sm')]: {
       padding:'0px',
@@ -57,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }
 }));
-    
+
 export default function GridFirst() {
     const classes = useStyles();
     return (
@@ -69,42 +70,19 @@ export default function GridFirst() {
             <Grid container align='center' spacing={2}>
 
               <Grid item xs={12} sm={12} md={6}>
-              <Typography variant='body1' paragraph='true' align='left' style={{}} className={classes.content}>
-                I'm a multi-talented human. Most of my time I design and build 
-                digital products. You can also call me a product designer,
-                experience designer, interaction, UI, UX, or by any other market
-                defined function-title. I have experience in a wide range of design 
-                disciplines, I'm also a manager, advisor, entrepreneur, front-end 
-                developer, music enthusiast,
-                traveler, photographer, and more.
-                I'm a multi-talented human. Most of my time I design and build 
-                digital products. You can also call me a product designer,
-                experience designer, interaction, UI, UX, or by any other market
-                defined function-title. I have experience in a wide range of design 
-                disciplines, I'm also a manager, advisor, entrepreneur, front-end 
-                developer, music enthusiast,
-                traveler, photographer, and more.
-                I'm a multi-talented human. Most of my time I design and build 
-                digital products. You can also call me a product designer,
-                experience designer, interaction, UI, UX, or by any other market
-                defined function-title. I have experience in a wide range of design 
-                disciplines, I'm also a manager, advisor, entrepreneur, front-end 
-                developer, music enthusiast,
-                traveler, photographer, and more.
-                I'm a multi-talented human. Most of my time I design and build 
-                digital products. You can also call me a product designer,
-                experience designer, interaction, UI, UX, or by any other market
-                defined function-title. I have experience in a wide range of design 
-                disciplines, I'm also a manager, advisor, entrepreneur, front-end 
-                developer, music enthusiast,
-                traveler, photographer, and more.
-                I'm a multi-talented human. Most of my time I design and build 
-                digital products. You can also call me a product designer,
-                experience designer, interaction, UI, UX, or by any other market
-                defined function-title. I have experience in a wide range of design 
-                disciplines, I'm also a manager, advisor, entrepreneur, front-end 
-                developer, music enthusiast,
-                traveler, photographer, and more.
+              <Typography align='left' className={classes.content}>
+              Most of my time I design and build digital products. You can also call 
+              me a product designer, experience designer, interaction, UI, UX, or by 
+              any other market defined function-title. I have experience in a wide
+              range of production disciplines, I'm also an advisor, entrepreneur, full-stack
+              developer, music enthusiast, traveler, sportsman, photographer, and 
+              more. 
+            </Typography>
+            <Typography align='left' className={classes.content}>
+            I'm a bit of a digital product junky. Over the years, I've used hundreds 
+            of web and mobile apps in different industries and verticals.
+            Eventually, I decided that it would be a fun challenge to try designing 
+            and building my own.
             </Typography>
               </Grid>
 
@@ -113,7 +91,7 @@ export default function GridFirst() {
               {/* <Paper elevation={2} style={{margin:'60px', transform:'translate(100px, 0px)'}} className={classes.story}>Hello</Paper> */}
               <img alt="story" src={Story}  className={classes.story}/>
               </div>
-              </Grid>  
+              </Grid>
             </Grid>
           </Paper>
   </>

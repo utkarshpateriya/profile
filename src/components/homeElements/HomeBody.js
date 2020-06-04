@@ -6,8 +6,8 @@ import Footer from './footer';
 import Card from "./card";
 import StyleQuotes from "./styledquote";
 import Typer from './Typer';
-import EndPara from './lastContent';
-
+import LastContent from './lastContent';
+import Pallete from './pallete';
 import Test from './test';
 
 const useStyles = makeStyles((theme) => ({
@@ -29,6 +29,7 @@ export default function RecipeReviewCard() {
   const classes = useStyles();
   return (
 <>
+<Grid>
 {/* A blank overlay on background Image */}
 
 {/* Automatic typer */}
@@ -43,8 +44,27 @@ export default function RecipeReviewCard() {
 {/* Things I know */}
 <TechIknow />
 {/* End Grids */}
-<EndPara />
+<LastContent 
+title='My Mindset' 
+content='I’m never satisfied to just come up with ideas. Instead, I have an almost impulsive need to act on them.
+
+My abundant energy fuels me in the pursuit of many interests, hobbies, areas of study, and artistic endeavors. I’m a fast learner, able to pick up new skills and juggle different projects and roles with relative ease. 
+
+I like to develop expertise in several areas throughout my life and career.
+
+I’m a people-person with deep emotions and empathy, a natural storyteller.'  
+/>
+<Pallete /> 
+<LastContent
+ title='Thanks for Visiting'
+ content="I’m able to inspire and am at my best when I’m sharing my creative expressions with others. 
+I’m always open to discussing product design work or partnership opportunities.
+If you like my work and have some cool projects to work on, just send me a direct message or contact 
+me through social sites listed below."
+  />
+
 <Footer />
+</Grid>
 </>
   );
 }

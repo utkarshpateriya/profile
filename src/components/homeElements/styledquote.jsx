@@ -14,8 +14,12 @@ const useStyles = makeStyles((theme) => ({
         color:'#A23F54',
     },
     quote:{
+        fontSize:'44px',
         fontStyle:'italic',
-        fontFamily:'Ubuntu'
+        fontFamily:'Ubuntu',
+        [theme.breakpoints.down('sm')]: {
+            fontSize:'22px',
+          },
     }
 }));
 

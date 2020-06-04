@@ -6,17 +6,22 @@ import { MdEmail } from 'react-icons/md'
 const useStyles = makeStyles((theme) => ({
   box:{
     backgroundColor:'black',
-    height:'auto'
+    height:'auto',
+    marginTop:'200px',
+    paddingTop:'50px',
+    paddingBottom:'0px',
   },
   icons:{
-    fontSize:'40px',
+    fontSize:'60px',
     color:'white',
     margin:'10px',
+    paddingBottom:'50px',
   },
   text:{
     fontSize:'20px',
     margin:'10px',
-    color:'white'
+    color:'white',
+    paddingBottom:'50px',
   },
   
 }));
@@ -25,10 +30,10 @@ export default function Footer(){
   const classes = useStyles();
   return (
     <>
-      <Grid container>
+      <Grid container className={classes.box}>
         <Grid item xs={2} style={{backgroundColor:'black',}}></Grid>
 
-        <Grid container item xs={8} align='center' className={classes.box}>
+        <Grid container item xs={8} align='center'>
         <Grid item xs={12} className={classes.text}>Connect to me</Grid>
          <Grid item xs={12}>
               <a href="https://twitter.com/78_utkarsh" target="_blank" ><AiFillTwitterCircle className={classes.icons} /></a>
